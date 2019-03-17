@@ -45,13 +45,12 @@ int main(){
                     printf("%d -> ", table[j][k]);
                 }
             }
-            if(j == addrQt-1 && i != testCases-1){
-                printf("\\\n");
-            }
-            else{
-                printf("\\");
+            printf("\\");
+            if (j==addrQt-1 && i!=testCases-1){
+                printf("\n");
             }
         }
+        printf("\n");
     }
 
     return 0;
