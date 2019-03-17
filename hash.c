@@ -34,13 +34,23 @@ int main(){
         }
 
         for(int j = 0; j<addrQt; j++){
-            printf("\n%d -> ", j);
+            if(j){
+                printf("\n%d -> ", j);
+            }
+            else{
+                printf("%d -> ",j);
+            }
             for(int k = 0; k < keysQt; k++){
                 if(table[j][k]){
                     printf("%d -> ", table[j][k]);
                 }
             }
-            printf("\\");
+            if(j == addrQt-1 && i != testCases-1){
+                printf("\\\n");
+            }
+            else{
+                printf("\\");
+            }
         }
     }
 
